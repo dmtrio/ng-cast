@@ -16,7 +16,8 @@ angular.module('video-player')
 
     };
 
-    this.currentVideo = {};
+    this.currentVideo = window.exampleVideoData[0];
+    console.log('current video ', this.currentVideo);
     this.videos = window.exampleVideoData;
   },
   //$scope.videos: window.exampleVideoData,
