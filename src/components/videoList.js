@@ -9,7 +9,6 @@ angular.module('video-player')
   },
 
   controller: function() {
-    console.log(this);
     
   }
 });
