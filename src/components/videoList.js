@@ -4,10 +4,12 @@ angular.module('video-player')
   
   bindings: {
     videos: '<',
+    select: '=',
     onClick: '='
   },
 
   controller: function() {
+    console.log(this);
     
   }
 });

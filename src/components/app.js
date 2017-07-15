@@ -5,20 +5,23 @@ angular.module('video-player')
   templateUrl: 'src/templates/app.html', 
   
   controller: function() {
-    this.selectVideo = function() {
-
+    this.selectVideo = function(clickedVideo) {
+      this.currentVideo = clickedVideo;
     };
-    this.searchResults = function() {
 
+    this.searchResults = function() {
+      //getter for data
     };
 
     this.onClick = function() {
-
+      //search
     };
 
     this.currentVideo = window.exampleVideoData[0];
-    console.log('current video ', this.currentVideo);
+    // console.log('current video ', this.currentVideo);
     this.videos = window.exampleVideoData;
+
+    this.selectVideo = this.selectVideo.bind(this);
   },
   //$scope.videos: window.exampleVideoData,
 });
